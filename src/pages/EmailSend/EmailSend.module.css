@@ -1,0 +1,110 @@
+.signin_main {
+  height: calc(100vh - 100px);
+  justify-content: center;
+}
+
+.signinUpper {
+  height: 100%;
+  display: flex;
+}
+
+.signin {
+  width: 50%;
+  margin: auto;
+}
+
+.login_heading {
+  font-weight: 700;
+  font-size: 40px;
+  color: #4aa181;
+  text-align: center;
+}
+
+.explore_future_heading {
+  font-weight: 400;
+  font-size: 24px;
+  color: #92929d;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  width: 46px;
+  height: 62.78px;
+}
+
+.success {
+  width: 100px;
+  height: 100px;
+}
+
+.success_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 280px) {
+  .logo {
+    width: 46px;
+    height: 62.78px;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .success {
+    width: 80px;
+    height: 80px;
+  }
+
+  .signin {
+    width: 85%;
+    margin: auto;
+  }
+
+  .explore_future_heading {
+    font-weight: 400;
+    font-size: 20px;
+    color: #92929d;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width: 425px) {
+  .logo {
+    width: 46px;
+    height: 62.78px;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .success {
+    width: 80px;
+    height: 80px;
+  }
+
+  .signin {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .signin {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .signin {
+    width: 34%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,90 @@
+
+@import "tw-animate-css";
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+html, body {
+    overflow-x: auto;
+  }
+    @media (max-width: 1030px) and (min-width: 600px) {
+      .choose-file {
+        font-size: 14px !important;
+      }
+    }
+    @media (max-width: 600px) and (min-width: 300px) {
+      .choose-file {
+        font-size: 12px !important;
+      }
+    }
+     @media (max-width: 300px) and (min-width: 100px) {
+      .choose-file {
+        font-size: 7px !important;
+      }
+    }
+  
+    /* Custom scrollbar styling */
+.very-thin-scroll {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #cbd5e1 #f1f5f9; /* thumb and track */
+}
+
+.very-thin-scroll::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.very-thin-scroll::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
+
+.very-thin-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.pagination-responsive {
+  width: 100%;
+  background-color: hsl(var(--background));
+  display: flex;
+  flex-direction: column;
+  /* Default height if not controlled inline */
+  height: 64vh; /* or 54vh if collapsed */
+}
+
+
+/* Small devices (smaller than 640px) */
+@media (max-width: 639px) {
+  .pagination-responsive {
+    height: 40vh;  /* or your preferred smaller height */
+  }
+ 
+}
+
+/* Medium devices (≥640px) */
+@media (min-width: 640px) and (max-width: 767px) {
+  .pagination-responsive {
+    height: 50vh;
+  }
+
+}
+
+/* Large devices (≥768px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pagination-responsive {
+    height: 54vh;
+  }
+ 
+}
+
+/* Extra large devices (≥1024px) */
+@media (min-width: 1024px) {
+  .pagination-responsive {
+    height: 64vh;
+  }
+ 
+}
+
+  
+
+
+

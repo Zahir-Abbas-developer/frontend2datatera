@@ -1,0 +1,635 @@
+{
+  "signIn": {
+    "title": "Login",
+    "subtitle": "Enter your email below to login to your account",
+    "email": "Email",
+    "emailPlaceholder": "m@example.com",
+    "password": "Password",
+    "forgotPassword": "Forgot your password?",
+    "submit": "Login",
+    "loading": "Loading...",
+    "divider": "Login with Google",
+    "googleButton": "Login with Google",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up",
+    "validation": {
+      "emailRequired": "Please Enter Your Email",
+      "emailInvalid": "Invalid email format",
+      "passwordRequired": "Please Enter Your Password"
+    }
+  },
+  "signUp": {
+    "title": "Sign up",
+    "subtitle": "Enter your email below to create your account",
+    "email": "Email",
+    "emailPlaceholder": "m@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Create a password",
+    "passwordConfirm": "Confirm Password",
+    "passwordConfirmPlaceholder": "Confirm password",
+    "termsText": "I agree to the",
+    "termsLink": "Terms of Service",
+    "andText": "and",
+    "privacyLink": "Privacy Policy",
+    "submit": "Sign up",
+    "creatingAccount": "Creating account...",
+    "orContinue": "Or continue with",
+    "googleButton": "Sign up with Google",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Login",
+    "messages": {
+      "acceptTerms": "Please read and accept the Terms of Service",
+      "verificationSent": "Verification link sent to your registered email address!",
+      "passwordLength": "Password must contains at least 8 characters!",
+      "passwordMismatch": "Password and confirm password should be same!"
+    },
+    "validation": {
+      "emailRequired": "Please Enter Your Email",
+      "emailInvalid": "Invalid email format",
+      "passwordRequired": "Please Enter Your Password",
+      "passwordNoSpaces": "Password cannot contain spaces",
+      "passwordConfirmRequired": "Please Enter Your Confirm Password"
+    }
+  },
+  "forgotPassword": {
+    "title": "Forgot Password",
+    "subtitle": "Enter your email below to reset your password",
+    "email": "Email",
+    "emailPlaceholder": "m@example.com",
+    "submit": "Send Reset Link",
+    "sending": "Sending...",
+    "rememberPassword": "Remember your password?",
+    "loginLink": "Login",
+    "messages": {
+      "resetLinkSent": "If an account exists for this email, a password reset link has been sent."
+    },
+    "validation": {
+      "emailRequired": "Please Enter Your Email",
+      "emailInvalid": "Invalid email format"
+    }
+  },
+  "common": {
+    "errors": {
+      "generalError": "An error occurred. Please try again."
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "email": "Email",
+    "name": "Name",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter phone number",
+    "password": "Password",
+    "googleAuth": "Google authentication",
+    "changePassword": "Change Password",
+    "editButton": "Edit",
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "plansTitle": "Plans",
+    "apiKeysTitle": "API keys",
+    "planType": "Type",
+    "maxFileSize": "Max Allowed File Size",
+    "urlsLimit": "URLs limit with \"Process URLs\"",
+    "expiry": "Expiry",
+    "expiryDate": "Expiry Date",
+    "unlimited": "Unlimited",
+    "expired": "Expired",
+    "daysLeft": "days left",
+    "status": "Active",
+    "getDataQuota": "GetData API quota per day",
+    "transformQuota": "Data transformation API call quota per day",
+    "maxReqMin": "Max requests per minute",
+    "maxReqSec": "Max requests per second",
+    "apiKey": "API Key",
+    "active": "Active",
+    "inactive": "InActive",
+    "noData": "No Data",
+    "loading": "Loading",
+    "messages": {
+      "updateSuccess": "Profile Updated Successfully!"
+    }
+  },
+  "dataExport": {
+    "title": "Data Export Marketplace"
+  },
+  "sidebar": {
+    "upgrade": "Upgrade to PLUS",
+    "subscription": "Subscription",
+    "profile": "Profile",
+    "integrations": "Integrations",
+    "logout": "Logout",
+    "chromeExtension": "Install Chrome Browser Extension",
+    "noData": "No data found",
+    "newTransformation": "New transformation",
+    "placeholder": "Search transformations..."
+  },
+  "home": {
+    "remaining": "Transformations left: ",
+    "upload": "Choose File, Text, or Website"
+  },
+  "buttons": {
+    "addColumn": "Add Column",
+    "addRow": "Add Row",
+    "close": "Close",
+    "updateRow": "Update Row"
+  },
+  "columnModal": {
+    "title": "Add New Column",
+    "columnName": "Column Name",
+    "columnNamePlaceholder": "Enter column name",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter column description",
+    "adjacentColumn": "Adjacent Column",
+    "position": "Position",
+    "left": "Left",
+    "right": "Right",
+    "dataType": "Data Type",
+    "text": "Text",
+    "number": "Number",
+    "boolean": "Boolean",
+    "date": "Date",
+    "unique": "Unique",
+    "mandatory": "Mandatory",
+    "computedField": "Computed Field",
+    "search": "Search",
+    "close": "Close",
+    "addColumn": "Add Column"
+  },
+  "rowActions": {
+    "editRow": "Edit Row",
+    "addNewRow": "Add New Row"
+  },
+  "sampleData": {
+    "checkboxLabel": "Show sample data",
+    "tooltip": "Sample data is not the real data. It's the sample of perfect data you want to collect so our AI will recognize same data later"
+  },
+  "actions": {
+    "reloadSampleOrTemplate": "Reload Sample or Template",
+    "copyWithoutData": "Copy without data",
+    "copyWithData": "Copy with data",
+    "unsubscribe": "Unsubscribe",
+    "subscribe": "Subscribe",
+    "delete": "Delete",
+    "nameAndDescription": "Edit name and descriptions"
+  },
+  "export": {
+    "button": "Export",
+    "excel": "Excel (.xlsx)",
+    "csv": "CSV",
+    "json": "JSON"
+  },
+  "googleSheet": {
+    "connect": "Connect Google Sheet",
+    "update": "Update Google Sheet connection"
+  },
+  "demo": {
+    "view": "VIEW DEMO"
+  },
+  "reloadModal": {
+    "title": "Reloading the sample of data",
+    "message": "Are you sure? After reload all uploaded data will be cleared",
+    "reloadButton": "Reload"
+  },
+  "transformationModal": {
+    "title": "Start Transformation",
+    "mergeResults": {
+      "label": "Merge Results",
+      "tooltip": "Enable to merge all results into a single row"
+    },
+    "processUrls": {
+      "label": "Process URLs",
+      "tooltip": "Process URLs instead of text. Webpage content from each URL will be downloaded and processed. Each URL count as 1 transformation"
+    },
+    "pagination": {
+      "label": "Pagination, Load More, Unlimited Scroll",
+      "placeholder": "Enter max iterations",
+      "description": "Set the maximum number of pages/scrolls."
+    },
+    "entireWebsite": {
+      "label": "Entire Website",
+      "tooltip": "Up to 5 pages for each website. For more pages, please contact us: contacts@aiagentlbs.com"
+    },
+    "smartAI": {
+      "label": "Smart AI Data Enrichment",
+      "tooltip": "10 first rows only will be processed and enriched. For more rows contact us: contacts@aiagentlbs.com"
+    },
+    "fileUpload": {
+      "button": "Add Files",
+      "textLabel": "Put Text or Website URLs here (minimum 10 characters)",
+      "placeholder": "Paste any URLs or text here to transform it. If you want to transform websites, remember to enable 'ProcessURLs' checkbox.",
+      "success": "File uploaded successfully",
+      "error": "Error uploading file",
+      "fileTooLarge": "File is too large",
+      "invalidFileType": "Invalid file type. Please upload a supported file format.",
+      "endpointNotFound": "Upload service not available",
+      "noResponse": "No response from server",
+      "uploadSampleFile": "Upload Sample File",
+      "uploading": "Uploading..."
+    },
+    "transformButton": "Transform"
+  },
+  "fileSize": {
+    "maxSize": "Max file size ",
+    "mb": "Mb",
+    "undefined": "Max file size not specified"
+  },
+  "account": {
+    "yourPlan": "Your Plan",
+    "manageSubscription": "Manage Subscription",
+    "contactUs": "Contact Us:",
+    "contactEmail": "contacts@aiagentlbs.com",
+    "loadingPlans": "Loading Plans",
+    "generating": "Generating... Please wait!"
+  },
+  "transformation": {
+    "editOrAdd": {
+      "edit": "Edit Transformation",
+      "add": "Add Transformation"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Example: Conference Attendees",
+      "description": "Description",
+      "descriptionPlaceholder": "Description example: This transformation is used to collect a list of contacts of speakers and attendees of the conferences including persons' name, position, company name, email, LinkedIn profile, X (Twitter) profile, and the conference name and website.",
+      "template": "Template",
+      "templateFilter": "Filter templates...",
+      "selectTemplate": "Select a template",
+      "saveOrCreate": {
+        "save": "Save Changes",
+        "create": "Create",
+        "createBlank": "Create from Scratch"
+      }
+    }
+  },
+  "aiActions": {
+    "createUsingAI": "Create Using AI"
+  },
+  "table": {
+    "filterPlaceholder": "Filter"
+  },
+  "uploadLimit": {
+    "importantNote": "You have used your monthly number of uploads.",
+    "options": {
+      "option1": "Option 1. Choose a Template",
+      "option2": "Option 2. Upload an example of the data you need.",
+      "option2Description": "The example should contain several (one to five) rows of ideal sample data you want to get.",
+      "uploadCsv": "Upload CSV sample",
+      "pasteSample": "Paste sample data (copy-paste from Excel, CSV, Google Sheets)",
+      "option3": "Option 3. Create Transformation from scratch.",
+      "addBlank": "Add blank transformation"
+    },
+    "addColumnPrompt": "Please add column first. Use three dots to the right of DATE/TIME header to add a column."
+  },
+  "validation": {
+    "sampleRowRequired": "Add at least one sample row"
+  },
+  "columnEditor": {
+    "title": "Edit Column ",
+    "labels": {
+      "columnName": "Column Name",
+      "description": "Description",
+      "dataType": "Data Type",
+      "classifierTable": "Classifier Table Link",
+      "selectColumn": "Select Column to Link",
+      "selectClassifier": "Select Classifier Table"
+    },
+    "dataTypes": {
+      "text": "Text",
+      "number": "Number",
+      "date": "Date",
+      "boolean": "Boolean"
+    },
+    "options": {
+      "unique": "Unique",
+      "mandatory": "Mandatory",
+      "computed": "Computed Field",
+      "search": "Search"
+    },
+    "buttons": {
+      "select": "Select",
+      "cancel": "Cancel",
+      "close": "Close",
+      "save": "Save Changes",
+      "remove": "Remove"
+    },
+    "classifierInfo": "columns available"
+  },
+  "modal": {
+    "title": "Add column",
+    "columnTitle": "Column Title",
+    "columnDescription": "Column Description",
+    "options": {
+      "unique": "Unique",
+      "mandatory": "Mandatory",
+      "computeField": "Compute Field"
+    },
+    "dataType": {
+      "label": "Select Data Type:",
+      "placeholder": "Select type",
+      "options": {
+        "text": "Text",
+        "number": "Number",
+        "datetime": "Datetime",
+        "boolean": "Boolean"
+      }
+    },
+    "addButton": "Add"
+  },
+  "pricingModule": {
+    "activation": {
+      "success_103": "Your package activated successfully (code 103)",
+      "success_102": "Your package activated successfully (code 102)"
+    },
+    "contact": {
+      "email": "contacts@aiagentlbs.com",
+      "mailto": "mailto:contacts@aiagentlbs.com"
+    },
+    "subscription": {
+      "trial": "TRIAL",
+      "current_plan": "Current plan",
+      "manage": "Manage subscription"
+    },
+    "plans": {
+      "free": {
+        "title": "FREE",
+        "btn_title": "Free plan",
+        "features": {
+          "transformations": "{{count}} transformations per month",
+          "file_size": "Standard file size (Max {{size}}Mb file/webpage size)",
+          "url_processing": "Standard URLs processing ({{count}} URLs per batch)"
+        }
+      },
+      "plus": {
+        "title": "PLUS",
+        "price": "USD $19/mo",
+        "btn_title": "Subscribe",
+        "features": {
+          "transformations": "{{count}} transformations per month",
+          "file_size": "Extended file size (Max {{size}}Mb file/webpage size)",
+          "url_processing": "Extended URLs processing ({{count}} URLs per batch, autopagination and autoscrolling)"
+        }
+      },
+      "enterprise": {
+        "title": "ENTERPRISE",
+        "btn_title": "Contact Us",
+        "features": {
+          "transformations": "More transformations, larger files/webpages",
+          "file_size": "Full website transformation (scan and scrape from entire Website)",
+          "url_processing": "API, Scheduler, More Integrations"
+        }
+      },
+      "trial": {
+        "title": "TRIAL",
+        "btn_title": "Free plan",
+        "features": {
+          "transformations": "{{count}} transformations per month",
+          "file_size": "Standard file size (Max {{size}}Mb file/webpage size)",
+          "url_processing": "Standard URLs processing ({{count}} URLs per batch)"
+        }
+      },
+      "pricing": {
+        "month": "/month",
+        "year": "/year"
+      }
+    }
+  },
+  "columnModalEdit": {
+    "title": "Edit Column Name and Description",
+    "columnName": "Column Name",
+    "columnDescription": "Column Description",
+    "options": {
+      "unique": "Unique",
+      "mandatory": "Mandatory",
+      "computeField": "Compute Field",
+      "search": "Search"
+    },
+    "dataType": {
+      "label": "Select Data Type:",
+      "placeholder": "Select type",
+      "options": {
+        "text": "Text",
+        "number": "Number",
+        "datetime": "Datetime",
+        "boolean": "Boolean"
+      }
+    },
+    "updateButton": "Update"
+  },
+  "columnEditorClassifier": {
+    "title": "Edit Column: ",
+    "labels": {
+      "columnName": "Column Name",
+      "description": "Description",
+      "dataType": "Data Type",
+      "classifierTable": "Classifier Table (CSV)",
+      "uploadCsv": "Upload CSV Classifier",
+      "uploadDescription": "Upload a CSV file containing classifier data",
+      "selectCsv": "Select CSV File",
+      "linkedColumn": "Linked Column:",
+      "changeColumn": "Change",
+      "selectColumn": "Select Column to Link"
+    },
+    "dataTypes": {
+      "text": "Text",
+      "number": "Number",
+      "datetime": "Date",
+      "boolean": "Boolean"
+    },
+    "options": {
+      "unique": "Unique",
+      "mandatory": "Mandatory",
+      "header": "Header",
+      "computeField": "Computed Field",
+      "search": "Search"
+    },
+    "buttons": {
+      "close": "Close",
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "confirm": "Confirm Selection",
+      "addRow": "Add Row"
+    },
+    "csvPreview": {
+      "title": "Select Column from CSV",
+      "actions": "Actions",
+      "select": "Select",
+      "edit": "Edit",
+      "delete": "Delete",
+      "showingRows": "Showing all rows"
+    },
+    "addRowDialog": {
+      "title": "Add New Row"
+    },
+    "notifications": {
+      "fileUploaded": "CSV file uploaded successfully",
+      "columnSelected": "Column selected successfully",
+      "rowAdded": "Row added successfully",
+      "rowDeleted": "Row deleted successfully",
+      "changesSaved": "Changes saved successfully"
+    }
+  },
+  "exportButton": {
+    "button": "Export Logs",
+    "history": "History",
+    "exporting": "Exporting",
+    "data":"Data"
+  },
+  "tableHeaders": {
+    "jobId": "Job ID",
+    "files": "Files",
+    "configurations": "Configurations",
+    "status": "Status",
+    "started": "Started",
+    "ended": "Ended",
+    "error": "Error message"
+  },
+  "configLabels": {
+    "processUrls": "Process URLs",
+    "merge": "Merge",
+    "pagination": "Pagination",
+    "entireWebsite": "Entire Website",
+    "aiEnrichment": "AI Data Enrichment"
+  },
+  "emptyState": "No history available.",
+  "exportIntegration": {
+    "chooseIntegrationTitle": "Export - Choose Integration",
+    "chooseIntegrationSubtitle": "Choose Integration",
+    "loading": "Loading...",
+    "csvColumn": "CSV Column",
+    "firstRowValue": "Value From First Row",
+    "connectionColumn": "Column",
+    "delete": {
+      "enabled": "Delete",
+      "disabled": "Delete action disabled"
+    },
+    "select": {
+      "classNamePrefix": "select"
+    }
+  },
+  "mapping": {
+    "saveButton": {
+      "saving": "Saving...",
+      "default": "Save"
+    },
+    "deleteButton": {
+      "deleting": "Deleting...",
+      "default": "Delete"
+    }
+  },
+  "tableHeadersExport": {
+    "job": "Job",
+    "rowNumber": "Row#",
+    "executedAt": "Executed At",
+    "transformation": "Transformation",
+    "integration": "Integration",
+    "status": "Status",
+    "error": "Error",
+    "noExports": "No exports so far."
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "columnActions": {
+    "deleteColumn": "Delete Column"
+  },
+  "deleteModal": {
+    "title": "Confirm Deletion",
+    "body": "Do you want to delete this record?",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "sampleDataWarning": "Warning: This will permanently delete sample data"
+  },
+  "googleSheetModal": {
+    "title": "Connect Google Sheet",
+    "popupWarning1": "The drop-down selector may not appear if popups are blocked in your browser.",
+    "popupWarning2": "If popups are not blocked and you are using Google Chrome, your company's policy probably blocks the connection.",
+    "selectSpreadsheet": "Select Spreadsheet",
+    "selectSheet": "Select Sheet",
+    "disconnectSheet": "Disconnect Google Sheet",
+    "connectNow": "Connect Now",
+    "disconnectAccount": "Disconnect Google Account"
+  },
+  "toasts": {
+    "activation": {
+      "success_101": "Your package activated successfully (code 101)",
+      "success_102": "Your package activated successfully (code 102)",
+      "success_103": "Your package activated successfully (code 103)",
+      "success_104": "Your package activated successfully (code 104)",
+      "columnAdded": "Column added successfully!",
+      "columnUpdated": "Column updated successfully!",
+      "columnDeleted": "Column deleted successfully!",
+      "emailVerified": "Email verification successful! Please login to continue."
+    },
+    "errors": {
+      "columnExists": "A column with this name already exists. Please choose a different name.",
+      "firstColumnsProtected": "The first two columns cannot be deleted.",
+      "firstColumnsModified": "The first two columns cannot be modified.",
+      "unmodifiableColumns": "The first two columns cannot be modified",
+      "upgradeSubscription": "Upgrade your subscription",
+      "valueMin": "Value should be greater than or equal to 1",
+      "valuePositive": "Value should be greater than 0",
+      "maxFileSize": "Maximum file size should be",
+      "requiredFields": "Integrations, Resources or Columns Fields are required!",
+      "addColumnFirst": "Please add column first. Use three dots to the right of DATE/TIME header to add a column.",
+      "loginError": "Error while logged in",
+      "loginErrorSome": "Some error while logged in",
+      "passwordMismatch": "Password and confirm password should be same!",
+      "passwordRequirements": "Password must contain at least 8 characters!"
+    }
+  },
+  "notification": {
+    "filename": "FILENAME",
+    "transformationStarted": "Transformation started. You can see status on History tab",
+    "working": "WORKING"
+  },
+  "cancelPage": {
+    "title": "Please try again later",
+    "homeButton": "Home",
+    "logoAlt": "Company logo"
+  },
+  "pricing": {
+    "plusPlan": "Plus USD",
+    "features": "25 uploads monthly. Extended file upload size. Extended URLs processing including secure websites.",
+    "homeButton": "Home",
+    "logoAlt": "Company logo",
+    "successAlt": "Success icon"
+  },
+  "emailSend": {
+    "logoAlt": "Company logo",
+    "successAlt": "Success icon",
+    "heading": "Email sent successfully!",
+    "message": "Please check your inbox and make sure to check spam as well.",
+    "footer": {
+      "copyright": "Copyright",
+      "companyName": "Datatera.ai",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "connectionForm": {
+    "panelTitle": "{{service}} Connection",
+    "options": {
+      "newConnection": "Add New Connection",
+      "existingConnection": "Select Existing Connection"
+    },
+    "labels": {
+      "connectionName": "Connection Name",
+      "requiredField": "*",
+      "credentialsPrompt": "Please provide credentials of",
+      "access": "account to allow access."
+    },
+    "status": {
+      "testing": "Testing connection",
+      "success": "Connection tested successfully",
+      "failed": "Connection test failed"
+    },
+    "buttons": {
+      "delete": "Delete",
+      "deleting": "Deleting...",
+      "saveTest": "Save & Test",
+      "saving": "Saving...",
+      "cancel": "Cancel"
+    }
+  }
+}

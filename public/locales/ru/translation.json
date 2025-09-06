@@ -1,0 +1,578 @@
+{
+  "signIn": {
+    "title": "Вход",
+    "subtitle": "Введите свой email, чтобы войти в аккаунт",
+    "email": "Email",
+    "emailPlaceholder": "example@domain.com",
+    "password": "Пароль",
+    "forgotPassword": "Забыли пароль?",
+    "submit": "Войти",
+    "loading": "Загрузка...",
+    "divider": "Войти через Google",
+    "googleButton": "Войти через Google",
+    "noAccount": "Нет аккаунта?",
+    "signUp": "Зарегистрироваться",
+    "validation": {
+      "emailRequired": "Пожалуйста, введите email",
+      "emailInvalid": "Неверный формат email",
+      "passwordRequired": "Пожалуйста, введите пароль"
+    }
+  },
+  "signUp": {
+    "title": "Регистрация",
+    "subtitle": "Введите свой email для создания аккаунта",
+    "email": "Email",
+    "emailPlaceholder": "example@domain.com",
+    "password": "Пароль",
+    "passwordPlaceholder": "Создайте пароль",
+    "passwordConfirm": "Подтверждение пароля",
+    "passwordConfirmPlaceholder": "Подтвердите пароль",
+    "termsText": "Я согласен с",
+    "termsLink": "условиями использования",
+    "andText": "и",
+    "privacyLink": "политикой конфиденциальности",
+    "submit": "Зарегистрироваться",
+    "creatingAccount": "Создание аккаунта...",
+    "orContinue": "Или продолжить с",
+    "googleButton": "Регистрация через Google",
+    "haveAccount": "Уже есть аккаунт?",
+    "loginLink": "Войти",
+    "messages": {
+      "acceptTerms": "Пожалуйста, прочтите и примите условия использования",
+      "verificationSent": "Ссылка для подтверждения отправлена на ваш email!",
+      "passwordLength": "Пароль должен содержать минимум 8 символов!",
+      "passwordMismatch": "Пароли должны совпадать!"
+    },
+    "validation": {
+      "emailRequired": "Пожалуйста, введите email",
+      "emailInvalid": "Неверный формат email",
+      "passwordRequired": "Пожалуйста, введите пароль",
+      "passwordNoSpaces": "Пароль не должен содержать пробелы",
+      "passwordConfirmRequired": "Пожалуйста, подтвердите пароль"
+    }
+  },
+  "forgotPassword": {
+    "title": "Восстановление пароля",
+    "subtitle": "Введите email для сброса пароля",
+    "email": "Email",
+    "emailPlaceholder": "example@domain.com",
+    "submit": "Отправить ссылку для сброса",
+    "sending": "Отправка...",
+    "rememberPassword": "Вспомнили пароль?",
+    "loginLink": "Войти",
+    "messages": {
+      "resetLinkSent": "Если аккаунт с этим email существует, ссылка для сброса пароля была отправлена."
+    },
+    "validation": {
+      "emailRequired": "Пожалуйста, введите email",
+      "emailInvalid": "Неверный формат email"
+    }
+  },
+  "common": {
+    "errors": {
+      "generalError": "Произошла ошибка. Пожалуйста, попробуйте снова."
+    }
+  },
+  "profile": {
+    "title": "Профиль",
+    "email": "Email",
+    "name": "Имя",
+    "phone": "Телефон",
+    "phonePlaceholder": "Введите номер телефона",
+    "password": "Пароль",
+    "googleAuth": "Google аутентификация",
+    "changePassword": "Изменить пароль",
+    "editButton": "Редактировать",
+    "saveButton": "Сохранить",
+    "cancelButton": "Отмена",
+    "plansTitle": "Тарифы",
+    "apiKeysTitle": "API ключи",
+    "planType": "Тип",
+    "maxFileSize": "Максимальный размер файла",
+    "urlsLimit": "Лимит URL с \"Обработкой URL\"",
+    "expiry": "Срок действия",
+    "expiryDate": "Дата окончания",
+    "unlimited": "Безлимитный",
+    "expired": "Истек",
+    "daysLeft": "Осталось дней",
+    "status": "Статус",
+    "getDataQuota": "Дневная квота API для получения данных",
+    "transformQuota": "Дневная квота API для преобразования данных",
+    "maxReqMin": "Максимум запросов в минуту",
+    "maxReqSec": "Максимум запросов в секунду",
+    "apiKey": "API ключ",
+    "active": "Активный",
+    "inactive": "Неактивный",
+    "noData": "Нет данных",
+    "loading": "Загрузка",
+    "messages": {
+      "updateSuccess": "Профиль успешно обновлен!"
+    }
+  },
+  "dataExport": {
+    "title": "Экспорт данных"
+  },
+  "sidebar": {
+    "upgrade": "Обновить до PLUS",
+    "subscription": "Подписка",
+    "profile": "Профиль",
+    "integrations": "Интеграции",
+    "logout": "Выйти",
+    "chromeExtension": "Установить расширение Chrome",
+    "noData": "Данные не найдены",
+    "newTransformation": "Новое преобразование",
+    "placeholder": "Поиск преобразований..."
+  },
+  "home": {
+    "remaining": "Осталось преобразований : ",
+    "upload": "Выберите Файл, Текст или Веб-сайт для преобразования"
+  },
+  "buttons": {
+    "addColumn": "Добавить колонку",
+    "addRow": "Добавить строку",
+    "close": "Закрыть",
+    "updateRow": "Обновить строку"
+  },
+  "columnModal": {
+    "title": "Добавить новую колонку",
+    "columnName": "Название колонки",
+    "columnNamePlaceholder": "Введите название колонки",
+    "description": "Описание",
+    "descriptionPlaceholder": "Введите описание колонки",
+    "adjacentColumn": "Соседняя колонка",
+    "position": "Позиция",
+    "left": "Слева",
+    "right": "Справа",
+    "dataType": "Тип данных",
+    "text": "Текст",
+    "number": "Число",
+    "boolean": "Булево",
+    "date": "Дата",
+    "unique": "Уникальный",
+    "mandatory": "Обязательный",
+    "computedField": "Вычисляемое поле",
+    "search": "Поиск",
+    "close": "Закрыть",
+    "addColumn": "Добавить колонку"
+  },
+  "rowActions": {
+    "editRow": "Редактировать строку",
+    "addNewRow": "Добавить новую строку"
+  },
+  "sampleData": {
+    "checkboxLabel": "Показать пример данных",
+    "tooltip": "Пример данных - это не реальные данные. Это образец идеальных данных, которые вы хотите собрать, чтобы наш ИИ мог распознавать такие же данные позже"
+  },
+  "actions": {
+    "reloadSampleOrTemplate": "Перезагрузить Образец или Шаблон",
+    "copyWithoutData": "Копировать без данных",
+    "copyWithData": "Копировать с данными",
+    "unsubscribe": "Отписаться",
+    "subscribe": "Подписаться",
+    "delete": "Удалить",
+    "nameAndDescription": "Редактировать название и описания"
+  },
+  "export": {
+    "button": "Экспорт",
+    "excel": "Excel (.xlsx)",
+    "csv": "CSV",
+    "json": "JSON"
+  },
+  "googleSheet": {
+    "connect": "Подключить Google Таблицу",
+    "update": "Обновить подключение Google Таблицы"
+  },
+  "demo": {
+    "view": "ПОСМОТРЕТЬ ДЕМО"
+  },
+  "reloadModal": {
+    "title": "Перезагрузка образца данных",
+    "message": "Вы уверены? После перезагрузки все загруженные данные будут очищены",
+    "reloadButton": "Перезагрузить"
+  },
+  "transformationModal": {
+    "title": "Начать Преобразование",
+    "mergeResults": {
+      "label": "Объединить Результаты",
+      "tooltip": "Включите, чтобы объединить все результаты в одну строку"
+    },
+    "processUrls": {
+      "label": "Обработать URL-адреса",
+      "tooltip": "Обрабатывать URL-адреса вместо текста. Содержимое каждой веб-страницы будет загружено и обработано. Каждый URL-адрес считается за 1 преобразование"
+    },
+    "pagination": {
+      "label": "Пагинация, Загрузить Ещё, Бесконечная Прокрутка",
+      "placeholder": "Введите максимальное число итераций",
+      "description": "Установите максимальное количество страниц/прокруток."
+    },
+    "entireWebsite": {
+      "label": "Весь Веб-сайт",
+      "tooltip": "До 5 страниц для каждого веб-сайта. Для большего количества страниц, пожалуйста, свяжитесь с нами: contacts@aiagentlbs.com"
+    },
+    "smartAI": {
+      "label": "Умное Обогащение Данных ИИ",
+      "tooltip": "Только первые 10 строк будут обработаны и обогащены. Для большего количества строк свяжитесь с нами: contacts@aiagentlbs.com"
+    },
+    "fileUpload": {
+      "button": "Добавить Файлы",
+      "textLabel": "Введите Текст или URL-адреса здесь (мин 10 символов)",
+      "placeholder": "Вставьте сюда URL-адреса или текст для преобразования в таблицу. Если вы хотите преобразовать в таблицу веб-сайты, не забудьте включить флажок 'Обработать URL-адреса'.",
+      "success": "Файл успешно загружен",
+      "error": "Ошибка при загрузке файла",
+      "fileTooLarge": "Файл слишком большой",
+      "invalidFileType": "Неверный тип файла. Пожалуйста, загрузите файл поддерживаемого формата.",
+      "endpointNotFound": "Сервис загрузки недоступен",
+      "noResponse": "Нет ответа от сервера",
+      "uploadSampleFile": "Загрузить Пример Файла",
+      "uploading": "Загрузка..."
+    },
+    "transformButton": "Преобразовать"
+  },
+  "fileSize": {
+    "maxSize": "Макс. размер ",
+    "mb": "Мб",
+    "undefined": "Макс. размер не указан"
+  },
+  "account": {
+    "yourPlan": "Ваш План",
+    "manageSubscription": "Управление Подпиской",
+    "contactUs": "Свяжитесь с нами:",
+    "contactEmail": "contacts@aiagentlbs.com",
+    "loadingPlans": "Загрузка Планов",
+    "generating": "Генерация... Пожалуйста, подождите!"
+  },
+  "transformation": {
+    "editOrAdd": {
+      "edit": "Редактировать Трансформацию",
+      "add": "Добавить Трансформацию"
+    },
+    "form": {
+      "name": "Название",
+      "namePlaceHolder": "Пример: Участники Конференции",
+      "description": "Описание",
+      "descriptionPlaceholder": "Пример описания: Это преобразование используется для сбора списка контактов спикеров и участников конференций, включая имя человека, должность, название компании, электронную почту, профиль LinkedIn, профиль X (Twitter), а также название и веб-сайт конференции.",
+      "template": "Шаблон",
+      "templateFilter": "Фильтровать шаблоны...",
+      "selectTemplate": "Выберите шаблон",
+      "saveOrCreate": {
+        "save": "Сохранить",
+        "create": "Создать",
+        "createBlank": "Создать с нуля"
+      }
+    }
+  },
+  "aiActions": {
+    "createUsingAI": "Создать с ИИ"
+  },
+  "table": {
+    "filterPlaceholder": "Фильтр "
+  },
+  "uploadLimit": {
+    "importantNote": "Вы использовали месячное количество загрузок.",
+    "options": {
+      "option1": "Вариант 1. Выбрать шаблон",
+      "option2": "Вариант 2. Загрузить пример нужных данных.",
+      "option2Description": "Пример должен содержать несколько (от одной до пяти) строк идеальных данных, которые вы хотите получить.",
+      "uploadCsv": "Загрузить CSV пример",
+      "pasteSample": "Вставить данные (копировать из Excel, CSV, Google Sheets)",
+      "option3": "Вариант 3. Создать преобразование с нуля.",
+      "addBlank": "Добавить пустое преобразование"
+    },
+    "addColumnPrompt": "Пожалуйста, сначала добавьте колонку. Используйте три точки справа от заголовка ДАТА/ВРЕМЯ для добавления колонки."
+  },
+  "validation": {
+    "sampleRowRequired": "Добавьте хотя бы одну строку с примером"
+  },
+  "columnEditor": {
+    "title": "Редактировать Колонку ",
+    "labels": {
+      "columnName": "Название Колонки",
+      "description": "Описание",
+      "dataType": "Тип Данных",
+      "classifierTable": "Связь с Классификатором",
+      "selectColumn": "Выберите Колонку для Связи",
+      "selectClassifier": "Выбрать Таблицу Классификатора"
+    },
+    "dataTypes": {
+      "text": "Текст",
+      "number": "Число",
+      "date": "Дата",
+      "boolean": "Булево"
+    },
+    "options": {
+      "unique": "Уникальный",
+      "mandatory": "Обязательный",
+      "computed": "Вычисляемое Поле",
+      "search": "Поиск"
+    },
+    "buttons": {
+      "select": "Выбрать",
+      "cancel": "Отмена",
+      "close": "Закрыть",
+      "save": "Сохранить Изменения",
+      "remove": "Удалить"
+    },
+    "classifierInfo": "Доступно колонок"
+  },
+  "modal": {
+    "title": "Добавить столбец",
+    "columnTitle": "Название столбца",
+    "columnDescription": "Описание столбца",
+    "options": {
+      "unique": "Уникальный",
+      "mandatory": "Обязательный",
+      "computeField": "Вычисляемое поле"
+    },
+    "dataType": {
+      "label": "Выберите тип данных:",
+      "placeholder": "Выберите тип",
+      "options": {
+        "text": "Текст",
+        "number": "Число",
+        "datetime": "Дата и время",
+        "boolean": "Логический"
+      }
+    },
+    "addButton": "Добавить"
+  },
+  "pricingModule": {
+    "activation": {
+      "success_103": "Ваш пакет успешно активирован (код 103)",
+      "success_102": "Ваш пакет успешно активирован (код 102)"
+    },
+    "contact": {
+      "email": "contacts@aiagentlbs.com",
+      "mailto": "mailto:contacts@aiagentlbs.com"
+    },
+    "subscription": {
+      "trial": "ПРОБНАЯ",
+      "current_plan": "Текущий тариф",
+      "manage": "Управление подпиской"
+    },
+    "plans": {
+      "free": {
+        "title": "БЕСПЛАТНЫЙ",
+        "btn_title": "Бесплатный план",
+        "features": {
+          "transformations": "{{count}} преобразований в месяц",
+          "file_size": "Стандартный размер файла (макс. {{size}}Мб файла/страницы)",
+          "url_processing": "Стандартная обработка URL ({{count}} URL за раз)"
+        }
+      },
+      "plus": {
+        "title": "ПЛЮС",
+        "price": "$19/мес",
+        "btn_title": "Подписаться",
+        "features": {
+          "transformations": "{{count}} преобразований в месяц",
+          "file_size": "Увеличенный размер файла (макс. {{size}}Мб файла/страницы)",
+          "url_processing": "Расширенная обработка URL ({{count}} URL за раз, автопагинация и автопрокрутка)"
+        }
+      },
+      "enterprise": {
+        "title": "КОРПОРАТИВНЫЙ",
+        "btn_title": "Связаться с нами",
+        "features": {
+          "transformations": "Больше преобразований, большие файлы/страницы",
+          "file_size": "Полное преобразование сайта (сканирование всего сайта)",
+          "url_processing": "API, Планировщик, Дополнительные интеграции"
+        }
+      },
+      "trial": {
+        "title": "ПРОБНЫЙ",
+        "btn_title": "Бесплатный план",
+        "features": {
+          "transformations": "{{count}} преобразований в месяц",
+          "file_size": "Стандартный размер файла (макс. {{size}}Мб файла/страницы)",
+          "url_processing": "Стандартная обработка URL ({{count}} URL за раз)"
+        }
+      },
+      "pricing": {
+        "month": "/месяц",
+        "year": "/год"
+      }
+    },
+    "columnModalEdit": {
+      "title": "Редактировать название и описание столбца",
+      "columnName": "Название столбца",
+      "columnDescription": "Описание столбца",
+      "options": {
+        "unique": "Уникальный",
+        "mandatory": "Обязательный",
+        "computeField": "Вычисляемое поле",
+        "search": "Поиск"
+      },
+      "dataType": {
+        "label": "Выберите тип данных:",
+        "placeholder": "Выберите тип",
+        "options": {
+          "text": "Текст",
+          "number": "Число",
+          "datetime": "Дата и время",
+          "boolean": "Логический"
+        }
+      },
+      "updateButton": "Обновить"
+    },
+    "columnEditor": {
+      "title": "Редактировать колонку: {{columnName}}",
+      "labels": {
+        "columnName": "Название колонки",
+        "description": "Описание",
+        "dataType": "Тип данных",
+        "classifierTable": "Таблица классификатора (CSV)",
+        "uploadCsv": "Загрузить CSV классификатор",
+        "uploadDescription": "Загрузите CSV файл с данными классификатора",
+        "selectCsv": "Выбрать CSV файл",
+        "linkedColumn": "Связанная колонка:",
+        "changeColumn": "Изменить",
+        "selectColumn": "Выбрать колонку для связи"
+      },
+      "dataTypes": {
+        "text": "Текст",
+        "number": "Число",
+        "datetime": "Дата",
+        "boolean": "Логический"
+      },
+      "options": {
+        "unique": "Уникальный",
+        "mandatory": "Обязательный",
+        "header": "Заголовок",
+        "computeField": "Вычисляемое поле",
+        "search": "Поиск"
+      },
+      "buttons": {
+        "close": "Закрыть",
+        "save": "Сохранить изменения",
+        "cancel": "Отмена",
+        "confirm": "Подтвердить выбор",
+        "addRow": "Добавить строку"
+      },
+      "csvPreview": {
+        "title": "Выберите колонку из CSV",
+        "actions": "Действия",
+        "select": "Выбрать",
+        "edit": "Редактировать",
+        "delete": "Удалить",
+        "showingRows": "Показано строк"
+      },
+      "addRowDialog": {
+        "title": "Добавить новую строку"
+      },
+      "notifications": {
+        "fileUploaded": "CSV файл успешно загружен",
+        "columnSelected": "Колонка успешно выбрана",
+        "rowAdded": "Строка успешно добавлена",
+        "rowDeleted": "Строка успешно удалена",
+        "changesSaved": "Изменения успешно сохранены"
+      }
+    }
+  },
+ "exportButton": {
+  "button": "Экспортировать записи",
+  "history": "История",
+  "exporting": "Экспортирование",
+  "data": "Данные"
+},
+  "tableHeaders": {
+    "jobId": "ID задачи",
+    "files": "Файлы",
+    "configurations": "Конфигурации",
+    "status": "Статус",
+    "started": "Начато",
+    "ended": "Завершено",
+    "error": "Сообщение об ошибке"
+  },
+  "configLabels": {
+    "processUrls": "Обработать URL-адреса",
+    "merge": "Объединить",
+    "pagination": "Пагинация",
+    "entireWebsite": "Весь веб-сайт",
+    "aiEnrichment": "Обогащение данных ИИ"
+  },
+  "emptyState": "История недоступна.",
+  "exportIntegration": {
+    "chooseIntegrationTitle": "Экспорт - Выбрать интеграцию",
+    "chooseIntegrationSubtitle": "Выбрать интеграцию",
+    "loading": "Загрузка...",
+    "csvColumn": "Колонка CSV",
+    "firstRowValue": "Значение из первой строки",
+    "connectionColumn": "Колонка",
+    "delete": {
+      "enabled": "Удалить",
+      "disabled": "Действие удаления отключено"
+    },
+    "select": {
+      "classNamePrefix": "select"
+    }
+  },
+  "mapping": {
+    "saveButton": {
+      "saving": "Сохранение...",
+      "default": "Сохранить"
+    },
+    "deleteButton": {
+      "deleting": "Удаление...",
+      "default": "Удалить"
+    }
+  },
+  "tableHeadersExport": {
+    "job": "Задача",
+    "rowNumber": "Строка#",
+    "executedAt": "Выполнено в",
+    "transformation": "Преобразование",
+    "integration": "Интеграция",
+    "status": "Статус",
+    "error": "Ошибка",
+    "noExports": "Экспорта пока нет."
+  },
+  "pagination": {
+    "previous": "Предыдущий",
+    "next": "Следующий"
+  },
+  "columnActions": {
+    "deleteColumn": "Удалить колонку"
+  },
+  "deleteModal": {
+    "title": "Подтвердить удаление",
+    "body": "Вы хотите удалить эту запись?",
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "sampleDataWarning": "Предупреждение: Это навсегда удалит образцы данных"
+  },
+  "googleSheetModal": {
+    "title": "Подключить Google Таблицу",
+    "popupWarning1": "Выпадающий селектор может не появиться, если всплывающие окна заблокированы в вашем браузере.",
+    "popupWarning2": "Если всплывающие окна не заблокированы и вы используете Google Chrome, вероятно, политика вашей компании блокирует подключение.",
+    "selectSpreadsheet": "Выбрать таблицу",
+    "selectSheet": "Выбрать лист",
+    "disconnectSheet": "Отключить Google Таблицу",
+    "connectNow": "Подключить сейчас",
+    "disconnectAccount": "Отключить аккаунт Google"
+  },
+  "connectionForm": {
+    "panelTitle": "Соединение {{service}}",
+    "options": {
+      "newConnection": "Добавить новое соединение",
+      "existingConnection": "Выбрать существующее соединение"
+    },
+    "labels": {
+      "connectionName": "Имя соединения",
+      "requiredField": "*",
+      "credentialsPrompt": "Пожалуйста, предоставьте учетные данные учетной записи",
+      "access": "para permitir el acceso."
+    },
+    "status": {
+      "testing": "Тестирование соединения",
+      "success": "Соединение успешно протестировано",
+      "failed": "Тест соединения не удался"
+    },
+    "buttons": {
+      "delete": "Удалить",
+      "deleting": "Удаление...",
+      "saveTest": "Сохранить и проверить",
+      "saving": "Сохранение...",
+      "cancel": "Отмена"
+    }
+  }
+}

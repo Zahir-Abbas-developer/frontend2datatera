@@ -1,0 +1,8 @@
+
+    @media (max-width: 1030px) and (min-width: 100px) {
+      .responsive-margin {
+        margin-left: 60px !important;
+        margin-top: 10px !important;
+      }
+    }
+  
