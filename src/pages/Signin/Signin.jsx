@@ -100,6 +100,7 @@ const Signin = () => {
       }}
     >
       <div
+       className='sign-in-margin'
         style={{
           width: '100%',
           maxWidth: '420px',
@@ -161,7 +162,7 @@ const Signin = () => {
                 id="password"
                 name="password"
                 type={showPassword ? 'text' : 'password'}
-                placeholder={t('signIn.passwordPlaceholder')}
+                placeholder={'Create Password'}
                 style={{
                   width: '100%',
                   backgroundColor: '#e6efff',

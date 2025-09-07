@@ -1,22 +1,24 @@
 import React, { useState } from "react";
-import { Box, TextField } from "@mui/material";
-import styles from "../ResetPassword/ResetPassword.module.css";
-import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { useFormik } from "formik";
+import * as yup from "yup";
+import axios from "axios";
 import { toast } from "react-toastify";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import logo from "../../assets/images/logo.jpg";
-import { useFormik } from "formik";
-import axios from "axios";
+
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
 import Loader from "../../components/shared/loader/Loader";
+import logo from "../../assets/images/logo.jpg";
 
 const ResetPassword = () => {
   const navigate = useNavigate();
 
-  const [showpassword, setShowpassword] = useState(false);
-  const [showconfirmPassword, setShowconfirmPassword] = useState(false);
-  const [isloading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const urlSearchParams = new URLSearchParams(window.location.search);
   const changePassword = urlSearchParams?.get("changePassword");
@@ -63,103 +65,85 @@ const ResetPassword = () => {
   const formik = useFormik({ initialValues, validationSchema, onSubmit });
 
   return (
-    <div className={styles.signin_main}>
-      <div className={styles.pic_div}>
-        <a href="https://aiagentlbs.com/" target="_blank"><img src={logo} className={styles.logo} alt="logo" /></a>
-      </div>
-      <div className={styles.signinUpper}>
-        <div className={styles.signin}>
-          <h6 className={styles.login_heading}>{changePassword ? 'Change' : 'Reset'} Password</h6>
-          <p className={styles.explore_future_heading}>
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4">
+      <Card className="w-full max-w-md shadow-xl">
+        <CardHeader className="flex flex-col items-center">
+          <a href="https://aiagentlbs.com/" target="_blank">
+            <img src={logo} alt="logo" className="h-16 mb-2" />
+          </a>
+          <CardTitle className="text-xl font-semibold">
+            {changePassword ? "Change" : "Reset"} Password
+          </CardTitle>
+          <p className="text-sm text-gray-500">
             Please enter your new password
           </p>
-          {isloading && <Loader />}
-          <Box
-            className={styles.form}
-            component="form"
-            noValidate
+        </CardHeader>
+
+        <CardContent>
+          {isLoading && <Loader />}
+
+          <form
             onSubmit={formik.handleSubmit}
+            className="flex flex-col space-y-4"
           >
-            <div className={styles.eye_icon_main}>
-              <TextField
-                type={showpassword ? "text" : "password"}
-                name="password"
-                label="Password"
-                disabled={isloading}
-                variant="outlined"
-                style={{ marginBottom: "1rem", width: "100%" }}
+            {/* Password */}
+            <div className="relative">
+              <Label htmlFor="password">Password</Label>
+              <Input
+                id="password"
+                type={showPassword ? "text" : "password"}
+                disabled={isLoading}
                 {...formik.getFieldProps("password")}
-                error={
-                  formik.touched.password && Boolean(formik.errors.password)
-                }
-                helperText={formik.touched.password && formik.errors.password}
               />
-
-              {showpassword ? (
-                <AiOutlineEyeInvisible
-                  className={styles.eye_icon}
-                  onClick={(e) => {
-                    setShowpassword(!showpassword);
-                  }}
-                />
-              ) : (
-                <AiOutlineEye
-                  className={styles.eye_icon}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setShowpassword(!showpassword);
-                  }}
-                />
+              {formik.touched.password && formik.errors.password && (
+                <p className="text-sm text-red-500 mt-1">
+                  {formik.errors.password}
+                </p>
               )}
+              <div
+                className="absolute right-3 top-9 cursor-pointer text-gray-500"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+              </div>
             </div>
 
-            <div className={styles.eye_icon_main}>
-              <TextField
-                type={showconfirmPassword ? "text" : "password"}
-                name="confirmPassword"
-                label="Confirm Password"
-                variant="outlined"
-                disabled={isloading}
-                style={{ marginBottom: "1rem", width: "100%" }}
+            {/* Confirm Password */}
+            <div className="relative">
+              <Label htmlFor="confirmPassword">Confirm Password</Label>
+              <Input
+                id="confirmPassword"
+                type={showConfirmPassword ? "text" : "password"}
+                disabled={isLoading}
                 {...formik.getFieldProps("confirmPassword")}
-                error={
-                  formik.touched.confirmPassword &&
-                  Boolean(formik.errors.confirmPassword)
-                }
-                helperText={
-                  formik.touched.confirmPassword &&
-                  formik.errors.confirmPassword
-                }
               />
-
-              {showconfirmPassword ? (
-                <AiOutlineEyeInvisible
-                  className={styles.eye_icon}
-                  onClick={(e) => {
-                    setShowconfirmPassword(!showconfirmPassword);
-                  }}
-                />
-              ) : (
-                <AiOutlineEye
-                  className={styles.eye_icon}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setShowconfirmPassword(!showconfirmPassword);
-                  }}
-                />
-              )}
+              {formik.touched.confirmPassword &&
+                formik.errors.confirmPassword && (
+                  <p className="text-sm text-red-500 mt-1">
+                    {formik.errors.confirmPassword}
+                  </p>
+                )}
+              <div
+                className="absolute right-3 top-9 cursor-pointer text-gray-500"
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+              >
+                {showConfirmPassword ? (
+                  <AiOutlineEyeInvisible />
+                ) : (
+                  <AiOutlineEye />
+                )}
+              </div>
             </div>
-            <Button
-              type="submit"
-              disabled={isloading}
-              className={styles.signin_login_btn}
-            >
-              {changePassword ? 'Change' : 'Reset'} {isloading ? "Password..." : "Password"}
+
+            <Button type="submit" disabled={isLoading} className="w-full">
+              {changePassword ? "Change" : "Reset"}{" "}
+              {isLoading ? "Password..." : "Password"}
             </Button>
-          </Box>
-        </div>
-      </div>
+          </form>
+        </CardContent>
+      </Card>
     </div>
   );
 };
+
 export default ResetPassword;

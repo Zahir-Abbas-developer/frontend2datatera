@@ -1,34 +1,21 @@
-import React, { useContext } from 'react';
-import { CircularProgress } from '@mui/material';
-import styles from '../../shared/loader/Loader.module.css';
-import { ListContext } from '../../../context/list';
-import useWindowDimensions from '../../../utiles/getWindowDimensions';
+import React, { useContext } from "react";
+import { Loader2 } from "lucide-react";
+import { ListContext } from "../../../context/list";
+import useWindowDimensions from "../../../utiles/getWindowDimensions";
 
 function Loader() {
-  
-  const {
-    openSideBar,
-  } = useContext(ListContext);
+  const { openSideBar } = useContext(ListContext);
   const { width } = useWindowDimensions();
 
   return (
-    <div className={styles.spinner} style={{ width: '100%' }}>
+    <div className="w-full flex">
       <div
+        className="bg-gray-100 rounded-lg p-3 flex items-center justify-center"
         style={{
-          backgroundColor: '#f1f1f5',
-          borderRadius: '10px',
-          width: 'fit-content',
-          height: 'fit-content',
-          padding: '10px',
-          paddingBottom: '5px',
-          marginLeft: !openSideBar && width > 722 ? '300px' : '0px'
+          marginLeft: !openSideBar && width > 722 ? "300px" : "0px",
         }}
       >
-        <CircularProgress
-          style={{
-            color: '#4aa181',
-          }}
-        />
+        <Loader2 className="w-8 h-8 text-emerald-600 animate-spin" />
       </div>
     </div>
   );

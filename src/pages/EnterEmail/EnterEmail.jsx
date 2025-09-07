@@ -35,7 +35,7 @@ const EnterEmail = () => {
   });
 
   return (
-    <div style={{
+    <div  style={{
       minHeight: '100vh',
       backgroundColor: '#121212',
       display: 'flex',
@@ -43,7 +43,7 @@ const EnterEmail = () => {
       justifyContent: 'center',
       padding: '16px',
     }}>
-      <div style={{
+      <div className='sign-in-margin' style={{
         width: '100%',
         maxWidth: '420px',
         backgroundColor: '#1E1E1E',

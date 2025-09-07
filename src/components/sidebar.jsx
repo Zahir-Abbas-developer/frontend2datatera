@@ -997,6 +997,15 @@ const Sidebar = ({ openPlan, setOpenPlan, handleUploadFile, search,  isCollapsed
             {isCollapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
           </button>
         )}
+         {isMobile && !isCollapsed && (
+    <button
+      onClick={() => onCollapsedChange(true)} // ✅ collapse on close
+      className="absolute top-2 right-4 z-20 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-full shadow-lg p-2 border border-slate-700 transition-all duration-200 hover:scale-105"
+      aria-label="Close sidebar"
+    >
+      <X size={18} /> {/* use lucide-react X icon */}
+    </button>
+  )}
         {/* <Button
           variant="ghost"
           size="sm"
@@ -1171,17 +1180,13 @@ const Sidebar = ({ openPlan, setOpenPlan, handleUploadFile, search,  isCollapsed
                         {/* Fixed dropdown menu positioning and styling for better visibility */}
                     {dropDownValue === elem?._id ? (
   <div
-    className="absolute left-2 top-2 z-50 w-56 bg-slate-800 rounded-lg shadow-2xl border border-slate-700 animate-fade-in backdrop-blur-sm"
-    style={{
-      // position: 'absolute',
-      // background: '#0d1117',
-      // borderRadius: '6px',
-      // width: '240px',
-      padding: '8px 0',
-      // top: `${dropdownPosition.top}px`,
-      // zIndex: 1000,
-      // boxShadow: '0 8px 24px rgba(1,4,9,0.6)',
-    }}
+     className="menu-responsive fixed z-[9999] w-56 bg-slate-800 rounded-lg shadow-2xl border border-slate-700 animate-fade-in backdrop-blur-sm"
+  style={{
+    top: dropdownPosition?.top ?? 100,   // dynamic position
+    left: dropdownPosition?.left ?? 100, // dynamic position
+    padding: "8px 0",
+  }}
+  
   >
     {/* Edit Name & Description */}
     <div
@@ -1242,7 +1247,7 @@ const Sidebar = ({ openPlan, setOpenPlan, handleUploadFile, search,  isCollapsed
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '10px 16px',
+        padding: '4px 16px',
         cursor: dataPresentCheck === 'data present' ? 'pointer' : 'not-allowed',
         color: dataPresentCheck === 'data present' ? '#c9d1d9' : '#6e7681',
         fontSize: '14px',
@@ -1904,15 +1909,18 @@ const Sidebar = ({ openPlan, setOpenPlan, handleUploadFile, search,  isCollapsed
                     { !updateConversion && <div
                         style={{
                           display: "flex",
-                          gap: "12px",
-                          paddingTop: "8px",
+    flexWrap: "wrap", // ✅ allow wrapping
+    gap: "12px",
+    paddingTop: "8px",
                         }}
                       >
                         <Button
+            
                           type="button"
                           variant="outline"
                           style={{
-                            flex: 1,
+                            flex: "1 1 30%", // 3 buttons in one line on large
+      minWidth: "200px", // prevents buttons from shrinking too much
                             backgroundColor: "#f9fafb",
                             border: "1px solid #e5e7eb",
                             color: "#4b5563",
@@ -1952,7 +1960,8 @@ const Sidebar = ({ openPlan, setOpenPlan, handleUploadFile, search,  isCollapsed
                         <Button
                           type="button"
                           style={{
-                            flex: 1,
+                            flex: "1 1 30%", // 3 buttons in one line on large
+      minWidth: "200px", // prevents buttons from shrinking too much
                             backgroundColor: "#16a34a",
                             color: "white",
                             border: "none",
@@ -1996,7 +2005,8 @@ const Sidebar = ({ openPlan, setOpenPlan, handleUploadFile, search,  isCollapsed
                         <Button
                           type="button"
                           style={{
-                            flex: 1,
+                            flex: "1 1 30%", // 3 buttons in one line on large
+      minWidth: "200px", // prevents buttons from shrinking too much
                             backgroundColor: "#dcfce7",
                             color: "#15803d",
                             border: "1px solid #bbf7d0",

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
@@ -11,6 +10,7 @@ import {
   faSpinner,
 } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import { Table } from '../ui/table';
 
 const formatDate = (dateString) => {
   try {

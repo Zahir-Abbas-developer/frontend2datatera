@@ -9,7 +9,6 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { ChevronDown, FileSpreadsheet, FileText, Braces, Menu } from "lucide-react"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { lazy, Suspense, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react"
-import { Form, Modal, Table } from "react-bootstrap"
 import { toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import * as XLSX from "xlsx"
@@ -30,6 +29,7 @@ import NotificationMsg from "../../components/transformation/NotificationMsg.jsx
 import { useTranslation } from "react-i18next"
 import ModernDataTable from "../../components/GridTable/index.jsx"
 import "./Home.css"
+import { Table } from "@/components/ui/table"
 
 // const IntegrationLogsTable = lazy(() => import("../../components/integrations/IntegrationLogsTable"))
 const TransformationHistory = lazy(() => import("../../components/transformation/TransformationHistory"))
@@ -1690,7 +1690,7 @@ const Home = () => {
                                         />
 
                                         {/* ... existing modal content ... */}
-                                        <Modal
+                                        {/* <Modal
                                           show={showNewRowModal}
                                           onHide={() => {
                                             setShowNewRowModal(false)
@@ -1734,7 +1734,7 @@ const Home = () => {
                                               {editingRowIndex !== null ? "Update Row" : "Add Row"}
                                             </Button>
                                           </Modal.Footer>
-                                        </Modal>
+                                        </Modal> */}
                                       </div>
                                     </div>
                                   </div>

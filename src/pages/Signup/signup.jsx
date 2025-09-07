@@ -88,7 +88,7 @@ const Signup = () => {
   };
 
   return (
-    <div style={{
+    <div  style={{
       minHeight: '100vh',
       backgroundColor: '#121212',
       display: 'flex',
@@ -96,7 +96,7 @@ const Signup = () => {
       justifyContent: 'center',
       padding: '16px',
     }}>
-      <div style={{
+      <div className='sign-in-margin' style={{
         width: '100%',
         maxWidth: '420px',
         backgroundColor: '#1E1E1E',
@@ -154,7 +154,7 @@ const Signup = () => {
                 id="password"
                 name="password"
                 type={showPassword ? 'text' : 'password'}
-                placeholder={t('signUp.passwordPlaceholder')}
+                  placeholder={'Create Password'}
                 style={{
                   width: '100%',
                   backgroundColor: '#e6efff',

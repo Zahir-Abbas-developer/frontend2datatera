@@ -3,4 +3,20 @@ html, body {
   }
  
   
-   
+   @media (max-width: 767px) {
+            .header-actions {
+              flex-direction: column;
+              align-items: stretch;
+            }
+            .buttons-container {
+              flex-direction: column;
+              width: 100%;
+            }
+            .buttons-container button {
+              width: 100%;
+            }
+            .pagination-controls {
+              flex-direction: column;
+              align-items: stretch;
+            }
+          }

@@ -52,18 +52,35 @@ html, body {
 }
 
 
-/* Small devices (smaller than 640px) */
-@media (max-width: 639px) {
+@media (min-width: 200px) and (max-width: 349px) {
   .pagination-responsive {
-    height: 40vh;  /* or your preferred smaller height */
+    height: 55vh !important;
   }
+   .menu-responsive{
+  left:40px !important
+ }
  
+}
+@media (min-width: 350px) and (max-width: 639px) {
+  .pagination-responsive {
+    height: 61vh !important;
+  }
+ .menu-responsive{
+  left:100px !important
+ }
 }
 
 /* Medium devices (≥640px) */
 @media (min-width: 640px) and (max-width: 767px) {
   .pagination-responsive {
     height: 50vh;
+  }
+
+}
+/* Medium devices (≥640px) */
+@media (min-width: 200px) and (max-width: 767px) {
+  .sign-in-margin {
+    margin-top: 40px;
   }
 
 }
@@ -75,6 +92,12 @@ html, body {
   }
  
 }
+
+@media (max-width: 767px) {
+        .choose-file {
+          width: 100% !important; /* ✅ only full width below md */
+        }
+      }
 
 /* Extra large devices (≥1024px) */
 @media (min-width: 1024px) {

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { AuthContext } from '../../context/auth';
 import {  useNavigate } from 'react-router-dom';
-import { Spinner } from 'react-bootstrap';
+import { Loader2 } from 'lucide-react';
 
 const Logout = () => {
   const { isLogin, signOut } = useContext(AuthContext);
@@ -22,21 +22,8 @@ const Logout = () => {
   }, []);
 
   return (
-    <div
-      className="d-flex justify-content-center align-items-center"
-      style={{
-        height: '100vh',
-      }}
-    >
-      <Spinner
-        size="xl"
-        style={{
-          alignSelf: 'center',
-          width: '60px',
-          height: '60px',
-          color: '#4aa181',
-        }}
-      />
+      <div className="flex items-center justify-center h-screen">
+      <Loader2 className="w-12 h-12 text-emerald-500 animate-spin" />
     </div>
   );
 };
